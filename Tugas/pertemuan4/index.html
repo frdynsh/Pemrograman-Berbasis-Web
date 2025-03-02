@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pertemuan ke-4</title>
+</head>
+<body>
+    <form>
+        <table border="0">
+            <tr>
+                <td>
+                    <label>Nama:</label>
+                    <input type="text" name="username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Email:</label>
+                    <input type="email" name="email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Jenis Kelamin:</label>
+                    <label><input type="radio" name="gender">Laki-laki</label>
+                    <label><input type="radio" name="gender">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Hobi:</label>
+                    <label><input type="checkbox" name="Hobi">Musik<label>
+                    <label><input type="checkbox" name="Hobi">Olahraga</label>
+                    <label><input type="checkbox"name="Hobi">Membaca<label>                     
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Pilih Kota: </label>
+                    <select name="kota">
+                        <option value="1">Jakarta</option>
+                        <option value="2">Bandung</option>
+                        <option value="3">Cirebon</option>
+                    </select>                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Upload Foto: <input type="file"></label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" onclick="alert('Berhasil!')">Daftar</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
