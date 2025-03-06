@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+</head>
+<body">
+    <form action="latihan4.html" method="post">
+        <p><input type="text" name="username" placeholder="Masukan Nama"></p>
+        <p><textarea name="komentar" rows="4" cols="50" placeholder="Masukan komentar Anda"></textarea></p>
+        <p><select name="pilihan">
+            <option value="1">pilihan 1</option>
+            <option value="2">pilihan 2</option>
+            <option value="3">pilihan 3</option>
+        </select></p>
+        <p>
+            <label><input type="radio" name="gender" value="male">Laki-laki</label>
+            <label><input type="radio" name="gender" value="female">Perempuan</label>
+        </p>
+        <p>
+            <label><input type="checkbox" name="hobi" value="membaca">membaca</label>
+            <label><input type="checkbox" name="hobi" value="olahraga">olahraga</label>
+            <label><input type="checkbox" name="hobi" value="musik">musik</label>
+        </p>
+        <p>
+            <button type="submit">Kirim</button>
+            <button type="button" onclick="alert('Halo!')">Klik saya</button>
+        </p>
+        <p>
+            <label for="file">Pilih File:</label>
+            <input type="file" name="file" id="file">
+            <p><button type="submit">Unggah</button></p>
+        </p>
+        <p>           
+            <input type="text" name="username" required minlength="5" maxlength="20" placeholder="Nama">
+            <input type="email" name="email" required placeholder="Email">
+            <input type="number" name="age" min="18" max="60" placeholder="Usia">
+            <p><button type="submit">Kirim</button></p>
+        </p>
+    </form>
+
+</body>
+</html>
