@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 0;
+    padding: 20px;
+ }
+ 
+ /* Metode Penulisan CSS */
+.external-css h1 {
+    color: navy;
+    text-align: center;
+ }
+
+.external-css p {
+    font-size: 16px;
+    color: black;
+ }
+
+ /* Animasi dan Transisi */
+ .box {
+    width: 60px;
+    height: 30px;
+    background-color: blue;
+    transition-property: background-color; 
+    transition-duration: 1s; 
+    transition-timing-function: ease-in-out; 
+    transition-delay: 0.5s; 
+}
+.box:hover {
+    background-color: red;
+}
+
+ 
