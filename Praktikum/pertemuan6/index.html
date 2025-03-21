@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum6</title>
+</head>
+<body>
+    <!-- Inline JavaScript -->
+    <h1>Belajar Javascript Dasar</h1>
+    <button onclick="alert('Halo! Ini dari JavaScript')">klik</button>
+    
+    <!-- Internal JavaScript -->
+    <h1 id="judul">Selamat Datang</h1>
+    <button onclick="ubahTeks()">Ubah Teks</button>
+    <script>
+        function ubahTeks() {
+            document.getElementById("judul").innerHTML = "Teks telah berubah!";
+        }
+    </script>
+
+    <!-- External JavaScript -->
+    <p><button onclick="salam()">klik ini dong</button></p>
+    <script src="script.js"></script>
+</body>
+</html>

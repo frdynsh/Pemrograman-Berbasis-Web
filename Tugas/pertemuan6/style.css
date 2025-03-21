@@ -6,16 +6,15 @@
 
 /* Header */
 header {
-    background-color: #9c1328;
+    background-color: #9c135e;
     color: white;
     text-align: center;
     padding: 20px;
 }
-
 /* Navbar */
 nav {
-    background-color: #d73e3e;
-    padding: 10px;
+    background-color: #d73ea9;
+    padding: 20px;
     text-align: center;
 }
 nav ul {
@@ -23,7 +22,7 @@ nav ul {
 }
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 30px;
 }
 nav ul li a {
     color: white;
@@ -33,42 +32,39 @@ nav ul li a {
 /* container */
 .container {
     display: flex;
-    justify-content: space-between;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
-.content {
-    flex: 2;
-    padding: 20px;
-    background-color: #ECF0F1;
+.content{
+    width: 50%;
+    padding: 30px;
     border-radius: 10px;
-} 
-.content input, select, textarea, button {
-    width: 100%;
-    border: none;
-    border-radius: 3px;
+    background-color: #f7b2e2;
 }
-
-.text-wrapper{
-    margin-bottom: 10px;
-    border-bottom: 1px solid lightslategray;
+.content h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.content input, button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.content label, p{
+    font-size: 18px;
 }
 button{
     display: inline-block;
-    padding: 10px 20px;
-    background-color:dodgerblue;
+    background-color:#d73ea9;
     color: white;
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 button:hover {
-    background-color: #b92929;
-}
-/* sidebar */
-.sidebar {
-    flex: 1;
-    padding: 20px;
-    background-color: #BDC3C7;
-    border-radius: 10px;
-    margin-left: 20px;
+    background-color: #9c135e;
 }
