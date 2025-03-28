@@ -1,66 +1,35 @@
 <!DOCTYPE html>
 <head>
-    <title>Tugas Praktikum-5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS PROGRAM SEDERHANA</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
     <header>
-        <h1>Selamat Datang di Website KU</h1>
-    </header>
-
+        <h1>Program Sederhana</h1>
+    </header>       
     <nav>
         <ul>
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Tentang</a></li>
-            <li><a href="#">Layanan</a></li>
-            <li><a href="#">Kontak</a></li>
+            <li><a href="">Beranda</a></li>
+            <li><a href="">Tentang</a></li>
+            <li><a href="">Layanan</a></li>
+            <li><a href="">Kontak</a></li>
         </ul>
     </nav>
-
+    
     <div class="container">
-        <form class="content" action="/Tugas/pertemuan5/index.html" method="post">
-            <div class="text-wrapper">
-                <h2>Formulir Pendaftaran</h2>
-                <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
-            </div>
-            <div class="text-wrapper">
-                <p>Nama Lengkap:</p>
-                    <input type="text" name="username">
-                <p>Email:</p>
-                    <input type="email" name="email">
-                <p>Password:</p>
-                    <input type="password" name="password">
-            </div>
-            <div class="text-wrapper">
-                <p>Jenis Kelamin:</p>
-                    <p><label><input type="radio" name="gender" value="male">Laki-laki</label></p>
-                    <label><input type="radio" name="gender" value="female">Perempuan</label>
-            </div>
-            <div class="text-wrapper">
-                <p>Hobi:</p>
-                    <p><label><input type="checkbox" name="hobi" value="musik"> Musik</label></p>
-                    <p><label><input type="checkbox" name="hobi" value="olahraga"> Olahraga</label></p>
-                    <label><input type="checkbox" name="hobi" value="membaca"> Membaca</label>
-            </div>
-            <div class="text-wrapper">
-                <p>Pilihan kota</p>
-                <select name="pilihan">
-                    <option value="1">Jakarta</option>
-                    <option value="2">Cirebon</option>
-                    <option value="3">Bekasi</option>
-                </select>
-            </div>
-            <div class="text-wrapper">
-                <p>Pesan Tambahan:</p>
-                <textarea name="komentar" rows="4" placeholder="Tulis pesan di sini..."></textarea>
-                <p><button>Kirim</button></p>
-            </div>
-        </form>
-        <aside class="sidebar">
-            <h2>Sidebar</h2>
-            <p>Bagian ini dapat berisi tautan, iklan, atau informasi tambahan.</p>
-        </aside>
+        <div class="content">
+            <h2>Cek Nilai Mahasiswa</h2>
+            <label for="nim">Nomor Induk Mahasiswa:</label>
+            <input type="text" id="nim">
+            <label for="nilai">Nilai Mata Kuliah:</label>
+            <input type="number" id="nilai">
+            <button onclick="ceknilai()">Cek Nilai</button>
+            <p>Hasil: <span id="hasil"></span></p>
+        </div>
     </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
