@@ -4,12 +4,14 @@ function ceknilai(){
     let hasil = document.getElementById("hasil");
     
     if (nim === "" || isNaN(nilai)) {
-        document.getElementById("hasil").innerText = "Error Nim dan Nilai Kosong!!";
+        hasil.innerText = "Error Nim dan Nilai Kosong!!";
+        hasil.style.color = "red";
         return;
     }
 
     if (nilai < 0 || nilai > 100) {
-        document.getElementById("hasil").innerText = "Nilai tidak valid!!";
+        hasil.innerText = "Nilai tidak valid!!";
+        hasil.style.color = "red";
         return;
     }
 
@@ -25,5 +27,6 @@ function ceknilai(){
     } else {
         hurufMutu = "E";
     }
-    document.getElementById("hasil").innerText = `${hurufMutu}`;
+    hasil.innerText = `${hurufMutu}`;
+    hasil.style.color = "green";
 }
