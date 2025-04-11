@@ -104,6 +104,15 @@ header {
     background-color: #0a4258;
 }
 
+/* footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #13759c;
+    color: white;
+    margin-top: 20px;
+}
+
 
 @media screen and (max-width: 768px) {
     header {

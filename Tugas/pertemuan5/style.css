@@ -68,3 +68,43 @@ button{
 button:hover {
     background-color: #9c135e;
 }
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 1.5rem;
+    }
+
+    .content input,
+    .content button {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .content label,
+    .content p {
+        font-size: 16px;
+    }
+}
