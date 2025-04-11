@@ -24,8 +24,9 @@ header {
     justify-content: center;
     flex-direction: column;
     padding: 35px;
+    margin-top: 50px;
     align-items: center;
-    gap: 60px;
+    gap: 70px;
 }
 .container .section-hero {
     display: flex;
