@@ -103,3 +103,63 @@ header {
 .section-daftar .daftar-wrapper .box button:hover {
     background-color: #0a4258;
 }
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 20px;
+        margin-top: 30px;
+        gap: 40px;
+    }
+
+    .container .section-hero {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .container .section-hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .container .section-hero .text-hero {
+        font-size: 1rem;
+    }
+
+    .container .section-hero .text-hero img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .section-daftar {
+        width: 110%;
+    }
+
+    .section-daftar h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-daftar .daftar-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .section-daftar .daftar-wrapper .box {
+        width: 90%;
+    }
+
+    .section-daftar .daftar-wrapper .box h3 {
+        font-size: 1.3rem;
+    }
+
+    .section-daftar .daftar-wrapper .box button {
+        width: 100%;
+        height: 50px;
+        font-size: 1rem;
+    }
+}
