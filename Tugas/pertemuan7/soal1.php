@@ -3,8 +3,8 @@
     <title>Cek Jenis Kendaraan</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
 <div class="wrapper">
     <div class="soal">
         <h2>Cek Jenis Kendaraan</h2>

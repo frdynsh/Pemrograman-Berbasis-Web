@@ -150,10 +150,17 @@ footer {
     margin-bottom: 30px;
 }
 
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 input[type="number"] {
     width: 100%;
     padding: 10px;
-    margin-top: 10px;
     margin-bottom: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -162,6 +169,7 @@ input[type="number"] {
 input[type="submit"] {
     width: 100%;
     padding: 10px;
+    margin: 10px 0 20px;
     background-color: #8db87a;
     color: white;
     border: none;
