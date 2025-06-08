@@ -1,4 +1,4 @@
-<?php include 'proses_index.php'; ?>
+<?php include_once __DIR__ . '/../proses/proses_index.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +8,7 @@
    <title>Daftar Buku</title>
 </head>
 <body>
-   <?php include 'nav.php'; ?>
+   <?php include_once __DIR__ . '/../header/nav.php'; ?>
    <div class="container mt-4">
        <h2>Daftar Buku</h2>
 
@@ -54,8 +54,8 @@
                    <td>Rp<?php echo number_format($row['Harga'], 2) ?></td>
                    <td><?php echo $row['stok'] ?></td>
                    <td>
-                       <a href="form_edit.php?id=<?php echo $row['ID'] ?>" class="btn btn-sm btn-warning">Edit</a>
-                       <a href="proses_hapus.php?id=<?php echo $row['ID'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
+                       <a href="../views/form_edit.php?id=<?php echo $row['ID'] ?>" class="btn btn-sm btn-warning">Edit</a>
+                       <a href="../proses/proses_hapus.php?id=<?php echo $row['ID'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus?')">Hapus</a>
                    </td>
                </tr>
                <?php endwhile; ?>

@@ -1,6 +1,6 @@
 <?php
-include 'koneksi_db.php';
-include 'nav.php';
+include_once __DIR__ . '/../config/koneksi_db.php';
+include_once __DIR__ . '/../header/nav.php';
 
 
 $id = $_GET['id'] ?? 0;
@@ -26,7 +26,7 @@ $row = $result->fetch_assoc();
 <body>
    <div class="container mt-4">
        <h2>Edit Data Buku</h2>
-       <form method="post" action="proses_edit.php">
+       <form method="post" action="../proses/proses_edit.php">
            <input type="hidden" name="id" value="<?= $row['ID'] ?>">
 
 

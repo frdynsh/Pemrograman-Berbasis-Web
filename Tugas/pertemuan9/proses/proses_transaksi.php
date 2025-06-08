@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php';
+include_once __DIR__ . '/../config/koneksi_db.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -60,11 +60,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
        $conn->commit();
-       header("Location: transaksi.php?message=" . urlencode("Pesanan berhasil dibuat."));
+       header("Location: ../views/transaksi.php?message=" . urlencode("Pesanan berhasil dibuat."));
        exit;
    } catch (Exception $e) {
        $conn->rollback();
-       header("Location: transaksi.php?message=" . urlencode("Gagal membuat pesanan: " . $e->getMessage()));
+       header("Location: ../views/transaksi.php?message=" . urlencode("Gagal membuat pesanan: " . $e->getMessage()));
        exit;
    }
 }

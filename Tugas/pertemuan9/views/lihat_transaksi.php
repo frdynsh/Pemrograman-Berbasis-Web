@@ -1,5 +1,5 @@
 <?php
-include 'koneksi_db.php'; // Koneksi database
+include_once __DIR__ . '/../config/koneksi_db.php';
 
 
 // Query untuk menampilkan data pesanan beserta nama pelanggan dan total harga
@@ -8,11 +8,13 @@ $query = "
        p.ID AS Pesanan_ID,
        pl.Nama AS Nama_Pelanggan,
        p.Tanggal_Pesanan,
-       p.Total_Harga,
-       SUM(dp.Kuantitas) AS Kuantitas
+       GROUP_CONCAT(b.judul SEPARATOR ', ') AS Judul_Buku,
+       SUM(dp.Kuantitas) AS Kuantitas,
+       p.Total_Harga
    FROM Pesanan p
    JOIN Pelanggan pl ON p.Pelanggan_ID = pl.ID
    JOIN detail_pesanan dp ON dp.Pesanan_ID = p.ID
+   JOIN Buku b ON b.ID = dp.Buku_ID
    GROUP BY p.ID, pl.Nama, p.Tanggal_Pesanan, p.Total_Harga
 ";
 $result = $conn->query($query);
@@ -28,7 +30,7 @@ $result = $conn->query($query);
    <title>Daftar Pesanan</title>
 </head>
 <body>
-   <?php include 'nav.php' ?>
+   <?php include_once __DIR__ . '/../header/nav.php'; ?>
    <div class="container mt-4">
        <h2>Daftar Pesanan</h2>
 
@@ -40,6 +42,7 @@ $result = $conn->query($query);
                    <th>ID Pesanan</th>
                    <th>Nama Pelanggan</th>
                    <th>Tanggal Pesanan</th>
+                   <th>Judul Buku</th>
                    <th>Total Buku</th>
                    <th>Total Harga</th>
                </tr>
@@ -50,6 +53,7 @@ $result = $conn->query($query);
                    <td><?= $row['Pesanan_ID'] ?></td>
                    <td><?= htmlspecialchars($row['Nama_Pelanggan']) ?></td>
                    <td><?= $row['Tanggal_Pesanan'] ?></td>
+                   <td><?php echo htmlspecialchars($row['Judul_Buku']) ?></td>
                    <td><?= $row['Kuantitas'] ?></td>
                    <td>Rp<?= number_format($row['Total_Harga'], 2) ?></td>
                </tr>

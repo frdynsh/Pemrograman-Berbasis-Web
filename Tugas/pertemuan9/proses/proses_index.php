@@ -1,6 +1,6 @@
 <?php
-   include 'koneksi_db.php'; // Koneksi database
-
+   include_once __DIR__ . '/../config/koneksi_db.php';
+   
 
    // Inisialisasi variabel pencarian
    $search_judul = isset($_GET['judul']) ? $_GET['judul'] : '';
