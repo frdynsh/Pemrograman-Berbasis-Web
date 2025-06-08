@@ -21,13 +21,13 @@
            </div>
            <div class="col-md-3">
                <label for="telepon" class="form-label">Cari Berdasarkan Telepon</label>
-               <input type="number" class="form-control" id="telepon" name="telepon" placeholder="Masukkan Telepon" value="<?php htmlspecialchars($search_telepon) ?>">
+               <input type="tel" class="form-control" id="telepon" name="telepon" placeholder="Masukkan Telepon" value="<?php htmlspecialchars($search_telepon) ?>">
            </div>
            <div class="col-md-2 align-self-end">
                <button type="submit" class="btn btn-primary w-100">Cari</button>
            </div>
            <div class="col-md-2 align-self-end">
-               <a href="index.php" class="btn btn-secondary w-100">Reset</a>
+               <a href="daftar_pelanggan.php" class="btn btn-secondary w-100">Reset</a>
            </div>
        </form>
 
